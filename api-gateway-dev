@@ -1,0 +1,22 @@
+server:
+  port: 9000
+zuul:
+  routes:
+  #  /myProduct/product/list ==> /product/product/list
+    aaaaaaa:
+      path: /myProduct/**
+      serviceId: product
+      #获取cookie
+      sensitiveHeaders: null
+  #简洁写法
+#    product: /myProduct/**
+  #排除某些
+  ignored-patterns:
+    - /**/product/listForOrder
+
+#zuul:
+#  routes:
+#    myProduct:
+#      path: /myProduct/**
+#      serviceId: product
+#
