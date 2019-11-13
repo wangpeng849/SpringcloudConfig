@@ -1,6 +1,11 @@
 spring:
   application:
     name: product
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
