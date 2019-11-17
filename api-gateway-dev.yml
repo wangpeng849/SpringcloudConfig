@@ -1,6 +1,8 @@
 server:
   port: 9000
 zuul:
+  #全部服务都可以传递cookie
+  sensitive-headers: 
   routes:
   #  /myProduct/product/list ==> /product/product/list
     aaaaaaa:
